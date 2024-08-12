@@ -53,7 +53,7 @@ export const checkRedirect = (
   currentCommand[1] === "go" && // first arg is 'go'
   currentCommand.length > 1 && // current command has arg
   currentCommand.length < 4 && // if num of arg is valid (not `projects go 1 sth`)
-  _.includes([1, 2, 3, 4], parseInt(currentCommand[2])); // arg last part is one of id
+  _.includes([1, 2, 3, 4, 5, 6], parseInt(currentCommand[2])); // arg last part is one of id
 
 /**
  * Check current render makes redirect for theme
@@ -141,15 +141,17 @@ export const argTab = (
   }
 
   // 8) if input is 'projects go '
-  else if (_.startsWith(inputVal, "projects go ")) {
-    [
-      "1.Sat Naing's Blog",
-      "2.Haru Fashion",
-      "3.Haru API",
-      "4.AstroPaper Blog Theme",
-    ].forEach(t => {
-      hintsCmds = [...hintsCmds, t];
-    });
-    return hintsCmds;
-  }
+  // else if (_.startsWith(inputVal, "projects go ")) {
+  //   [
+  //     "1.Sat Naing's Blog",
+  //     "2.Haru Fashion",
+  //     "3.Haru API",
+  //     "4.AstroPaper Blog Theme",
+  //     "5.AstroPaper Blog Theme",
+  //     "6.AstroPaper Blog Theme",
+  //   ].forEach(t => {
+  //     hintsCmds = [...hintsCmds, t];
+  //   });
+  //   return hintsCmds;
+  // }
 };
