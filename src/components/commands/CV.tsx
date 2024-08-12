@@ -17,7 +17,7 @@ const CV: React.FC = () => {
   return (
     <Wrapper>
       <span>Downloading CV <br />
-        [====================] 100%  <br />
+        [===================&gt;] 100%  <br />
         {/* 50.0MB/50.0MB <br /> */}
         Download complete !
 </span>

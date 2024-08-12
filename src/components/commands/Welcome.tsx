@@ -21,7 +21,9 @@ const Welcome: React.FC = () => {
             {``}
           </PreNameMobile>
         </PreWrapper>
-        <div>Welcome to my terminal portfolio. (Version 1.3.1)</div>
+        <div>Hi!, I am Rajdeep Banik</div>
+        <Seperator>----</Seperator>
+        <div>Welcome to my terminal portfolio.</div>
         <Seperator>----</Seperator>
         <div>
           Have a Look (｡･∀･)ﾉﾞ{" "}
