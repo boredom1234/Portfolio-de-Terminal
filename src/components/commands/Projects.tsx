@@ -30,7 +30,7 @@ const Projects: React.FC = () => {
 
   /* ===== check arg is valid ===== */
   const checkArg = () =>
-    isArgInvalid(arg, "go", ["1", "2", "3", "4"]) ? (
+    isArgInvalid(arg, "go", ["1", "2", "3", "4", "5", "6", "7", "8"]) ? (
       <Usage cmd="projects" />
     ) : null;
 
@@ -38,9 +38,7 @@ const Projects: React.FC = () => {
     checkArg()
   ) : (
     <div data-testid="projects">
-      <ProjectsIntro>
-        Some selected Projects.
-      </ProjectsIntro>
+      <ProjectsIntro>Some selected Projects.</ProjectsIntro>
       {projects.map(({ id, title, desc }) => (
         <ProjectContainer key={id}>
           <ProjectTitle>{`${id}. ${title}`}</ProjectTitle>
@@ -88,6 +86,18 @@ const projects = [
     title: "Pixel Adventure",
     desc: "A mario type 2d platformer adventure game.",
     url: "https://pixeladvn.netlify.app/",
+  },
+  {
+    id: 7,
+    title: "11Chat",
+    desc: "A real-time AI chat platform built with Next.js, Vercel AI SDK, Supabase, and Vertex AI.",
+    url: "https://github.com/boredom1234/11Chat",
+  },
+  {
+    id: 8,
+    title: "CodeCraft",
+    desc: "An AI-powered pair programming assistant that automates code generation, refactoring, and debugging across multiple languages.",
+    url: "https://github.com/boredom1234/CodeCraft",
   },
 ];
 

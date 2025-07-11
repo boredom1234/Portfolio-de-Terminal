@@ -13,13 +13,9 @@ const Welcome: React.FC = () => {
   return (
     <HeroContainer data-testid="welcome">
       <div className="info-section">
-        <PreName>
-          {``}
-        </PreName>
+        <PreName>{``}</PreName>
         <PreWrapper>
-          <PreNameMobile>
-            {``}
-          </PreNameMobile>
+          <PreNameMobile>{``}</PreNameMobile>
         </PreWrapper>
         <div>Hi!, I am Rajdeep Banik</div>
         <Seperator>----</Seperator>

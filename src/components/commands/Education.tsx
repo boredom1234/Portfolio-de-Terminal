@@ -17,12 +17,12 @@ const Education: React.FC = () => {
 
 const eduBg = [
   {
-    title: "BCA",
-    desc: "Siliguri Institute of Technology | 2020 ~ 2023",
+    title: "Master of Computer Applications (MCA), 9.0 GPA",
+    desc: "CHRIST (Deemed to be University), Bangalore | July 2023 – May 2025",
   },
   {
-    title: "MCA",
-    desc: "Christ (Deemed to be University) | 2023 - Present",
+    title: "Bachelor of Computer Applications (BCA), 9.0 GPA",
+    desc: "Siliguri Institute of Technology, Siliguri | Sept 2020 – May 2023",
   },
 ];
 

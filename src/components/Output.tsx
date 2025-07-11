@@ -11,6 +11,7 @@ import Welcome from "./commands/Welcome";
 import History from "./commands/History";
 import Projects from "./commands/Projects";
 import Socials from "./commands/Socials";
+import Skills from "./commands/Skills";
 import Themes from "./commands/Themes";
 import { OutputContainer, UsageDiv } from "./styles/Output.styled";
 import { termContext } from "./Terminal";
@@ -24,7 +25,7 @@ type Props = {
 const Output: React.FC<Props> = ({ index, cmd }) => {
   const { arg } = useContext(termContext);
 
-  const specialCmds = ["projects", "socials", "themes", "echo"];
+  const specialCmds = ["projects", "socials", "themes", "echo", "skills"];
 
   // return 'Usage: <cmd>' if command arg is not valid
   // eg: about tt
@@ -46,6 +47,7 @@ const Output: React.FC<Props> = ({ index, cmd }) => {
           projects: <Projects />,
           pwd: <GeneralOutput>/home/boredom1234</GeneralOutput>,
           socials: <Socials />,
+          skills: <Skills />,
           themes: <Themes />,
           welcome: <Welcome />,
           whoami: <GeneralOutput>guest</GeneralOutput>,

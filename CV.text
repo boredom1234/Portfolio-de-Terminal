@@ -1,0 +1,206 @@
+%-------------------------
+% Resume in Latex
+% OFFICIAL TEMPLATE FOR DEPARTMENT OF COMPUTER SCIENCE, CHRIST UNIVERSITY (2024-2025).
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage[absolute,overlay]{textpos}
+\input{glyphtounicode}
+
+\definecolor{bannerblue}{RGB}{24,70,106}
+\definecolor{goldline}{RGB}{196,160,72}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------------------------------
+
+\begin{document}
+
+%----------IMAGE/CHRIST-LOGO/BANNER----------
+\begin{tikzpicture}[remember picture,overlay]
+    \fill[bannerblue] (current page.north west) rectangle ([yshift=-3cm]current page.north east);
+    \draw[goldline,line width=3pt] ([yshift=-3cm]current page.north west) -- ([yshift=-3cm]current page.north east);
+    \node[anchor=north east, inner sep=0pt] at ([xshift=-10pt, yshift=-10pt]current page.north east) 
+        % {\includegraphics[width=3cm]{christ-uni-logo.png}};
+\end{tikzpicture}
+
+%----------HEADING----------
+\begin{textblock*}{\textwidth}(37pt, 0.5cm)
+\begin{center}
+    \color{white}\textbf{\Huge \scshape Rajdeep Banik} \\ \vspace{8pt}
+    \small 
+    \href{tel:+919775791985}{\underline{\color{white}+91 9775791985}} $|$ 
+    \href{mailto:banik.rajdeep1056@gmail.com}{\underline{\color{white}banik.rajdeep1056@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/banikrajdeep}{\underline{\color{white}linkedin.com/in/banikrajdeep}} $|$
+    \href{https://github.com/boredom1234}{\underline{\color{white}github.com/boredom1234}}
+\end{center}
+\end{textblock*}
+
+\vspace{1.5cm} % Add some space after the banner
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {CHRIST (Deemed to be University)}{Bangalore, India}
+      {Master of Computer Applications}{July 2023 -- May 2025}
+    \resumeSubheading
+      {Siliguri Institute of Technology}{Siliguri, India}
+      {Bachelor of Computer Applications, 9.0 GPA}{September 2020 -- May 2023}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Trivium eSolutions}{Bangalore, India}
+      {Software Engineer Intern}{January 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Designed and developed "CodeCraft", an AI Pair Programming Assistant that integrates LLMs to automate code generation, refactoring, and debugging across Python, JavaScript, Rust, and other languages.}
+        \resumeItem{Engineered a context-aware codebase mapping system enabling intelligent suggestions and modifications, with seamless integration into popular IDEs and editors to streamline developer workflows.}
+        \resumeItem{Developed automated testing, linting, and git-based version control features with clear commit messages, facilitating efficient code review and collaboration processes.}
+        \resumeItem{Implemented multi-modal context support including images and web pages, with voice command capabilities, creating a comprehensive platform for rapid development using state-of-the-art LLM APIs.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading
+    {11Chat}{2025}
+    {Developer}{}
+    \resumeItemListStart
+      \resumeItem{Developed '11-Chat', a real-time AI chat platform using Next.js and Vercel AI SDK. Implemented secure authentication with JWT, managed data with Supabase, and enhanced UX with Vertex AI, Tailwind CSS, and Vercel deployment.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {CodeCraft}{2025}
+    {Developer}{}
+    \resumeItemListStart
+      \resumeItem{Created 'CodeCraft', an AI-powered pair programming assistant that automates code generation, refactoring, and debugging across multiple languages, with features like context-aware codebase mapping, IDE integration, and multi-modal support.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Notif Eye}{2024}
+      {Developer}{}
+      \resumeItemListStart
+        \resumeItem{Created a crime reporting and alerting application using Flutter, integrated with Google Cloud SDK and Firebase. Improved real-time reporting accuracy by 40\% and reduced response times by 20\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Sechs Menu}{2022}
+      {Lead Developer}{}
+      \resumeItemListStart
+        \resumeItem{Created a mod menu for GTA V using C++, enhancing gameplay. Increased user engagement by 40\% and achieved 5,000+ downloads in the first month.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------KEY ACHIEVEMENTS-----------
+% \section{KEY ACHIEVEMENTS}
+% \begin{itemize}[leftmargin=*,label={\textbullet}]
+%     \item Awarded Best Outgoing Student and achieved First Rank in BCA Batch of 2023.
+%     \item Recognized for the Best Project in Industrial Training, contributing to a 15\% improvement in project completion efficiency.
+%     \item Launched Pixel Adventure game, achieving over 150+ downloads in 3 months.
+%     \item Developed Sechs Menu for GTA V, increasing user engagement by 40\% and reaching 5,000+ downloads.
+% \end{itemize}
+
+%-----------TECHNICAL SKILLS-----------
+\section{TECHNICAL SKILLS}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages:} Python, C\#, C, LUA, R, JAVA, JavaScript\\
+     \textbf{Frameworks \& Libraries:} React, Unity, Godot, GD Script, Streamlit, Computer Vision, SpringBoot, Kafka\\
+     \textbf{Development Tools:} Git, Docker, Kubernetes, SonarQube, CI/CD, Memory Hacking \\
+     \textbf{Web \& Cloud Technologies:} Google Cloud, AWS, MySQL, MongoDB, API, Microservices \\
+     \textbf{Security \& Systems:} Cyber-Security, UNIX, IoT (Arduino, Raspberry Pi, ESP32) \\
+     \textbf{Specialized Skills:} Level Design, Gameplay Scripting, GenAI, Agentic AI, Prompt Engineering, NLP
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}

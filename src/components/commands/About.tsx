@@ -11,11 +11,12 @@ const About: React.FC = () => {
         Hi, my name is <HighlightSpan>Rajdeep Banik</HighlightSpan>!
       </p>
       <p>
-        I'm <HighlightAlt>a Game developer</HighlightAlt> based in Bengaluru,
-        India.
+        I'm a <HighlightAlt>Software Engineer & AI enthusiast</HighlightAlt>{" "}
+        currently interning at Trivium eSolutions in Bengaluru, India.
       </p>
       <p>
-      I am passionate about writing code and developing indie games.
+        I love building intelligent developer tools, full-stack web apps, and
+        indie games that delight users.
       </p>
     </AboutWrapper>
   );
