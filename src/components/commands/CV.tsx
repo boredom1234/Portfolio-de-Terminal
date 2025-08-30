@@ -12,7 +12,7 @@ const CV: React.FC = () => {
   if (rerender && currentCommand[0] === "cv" && currentCommand.length <= 1) {
     // window.open("https://drive.google.com/file/d/1w2u70NVekMUEM2A-qiXQnito2gSEiU7j/view?usp=sharing", "_blank");
     window.open(
-      "https://drive.usercontent.google.com/u/0/uc?id=1w2u70NVekMUEM2A-qiXQnito2gSEiU7j&export=download",
+      "https://drive.usercontent.google.com/u/0/uc?id=1ulYXDuGNITHTH6w-KQFeTEb1432LG9V1&export=download",
       "_blank"
     );
   }
